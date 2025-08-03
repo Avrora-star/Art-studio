@@ -4,16 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: "Montserrat Alternates", sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
 }
 
-nav, #social {
+nav,
+#social {
     background-color: #222222;
-    display: flex ;
-    flex-direction: column ;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     width: fit-content;
-    position:fixed;
+    position: fixed;
 }
 
 .menu-item {
@@ -21,9 +22,9 @@ nav, #social {
 }
 
 .menu-item:hover {
-    animation-name:shake;
+    animation-name: shake;
     animation-duration: 1s;
-    animation-iteration-count:1;
+    animation-iteration-count: 1;
 }
 
 #social {
@@ -33,16 +34,91 @@ nav, #social {
 }
 
 .social-item {
-    margin:10px;
+    margin: 10px;
+}
+
+#header {
+    height: 100vh;
+    display: flex;
+}
+
+.header-left,
+.header-right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+.header-left {
+    flex-wrap: wrap;
+}
+
+.header-right {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-title {
+    font-size: 200px;
+    font-weight: 300;
+    text-align: right;
+}
+
+.header-title span {
+    font-weight: 700;
+}
+
+.header-branches {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.branch-item {
+    width: 40%;
+    font-weight: 700;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin:10px 20px ;
+    font-size:20px;
+    border-radius: 50px;
+    padding:10px 0;
+    flex-grow:1;
+}
+
+.logo-part {
+    height: 50%;
+    width: 50%;
+}
+
+.dark-blue {
+    background-color: #23536d;
+}
+
+.red {
+    background-color: #ff6969;
+}
+
+.yellow {
+    background-color: #ffe49d;
+}
+
+.blue {
+    background-color: #67c5e2;
+    border-radius: 0 0 50% 0;
+}
+
+section {
+    padding-left: 80px;
+
 }
 
 @keyframes shake {
     0% {
-        transform:rotate(0deg);
+        transform: rotate(0deg);
     }
 
     35% {
-        transform:rotate(10deg);
+        transform: rotate(10deg);
     }
 
     70% {
@@ -50,6 +126,6 @@ nav, #social {
     }
 
     100% {
-        transform:rotate(0deg);
+        transform: rotate(0deg);
     }
 }
