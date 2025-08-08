@@ -17,6 +17,10 @@ nav,
     position: fixed;
 }
 
+aside {
+    z-index: 100;
+}
+
 .menu-item {
     margin: 15px;
 }
@@ -111,6 +115,87 @@ section {
     padding-left: 80px;
 
 }
+
+#about {  
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.about-bg {
+    background-color: #ff6969;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.bg-text {
+    padding-left: 80px ;
+    font-size: 150px;
+    font-weight: 700;
+    opacity: 0.2;
+}
+
+.about-title {
+    color:white;
+    font-size: 50px;
+}
+
+.about-content {
+    width: 100%;
+    height: 100%;  
+    display: flex;
+
+}
+
+.about-content-left {
+    display: flex;
+    flex-direction: column;  
+    justify-content:space-between;  
+    height: 100%;
+}
+
+.about-content-right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-rect {
+    box-shadow: 10px 10px 0 #1d1d1d;
+    border-radius: 0 20px;
+}
+
+.rect1 {
+    width: 217px;
+    height: 222px;
+    background-color:#547bc7 ;
+    align-self: flex-end;
+}
+
+.rect2 {
+    width: 174px;
+    height: 166px;
+    background-color:#3993ba ;
+}
+
+.rect3 {
+    width: 269px;
+    height: 174px;
+    background-color:#e36fc3 ;
+    align-self:flex-start;
+}
+
+.about-text {
+    color:white;
+    font-size: 30px;
+}
+
 
 @keyframes shake {
     0% {
