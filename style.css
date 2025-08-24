@@ -86,11 +86,11 @@ aside {
     font-weight: 700;
     text-align: center;
     background-color: #f0f0f0;
-    margin:10px 20px ;
-    font-size:20px;
+    margin: 10px 20px;
+    font-size: 20px;
     border-radius: 50px;
-    padding:10px 0;
-    flex-grow:1;
+    padding: 10px 0;
+    flex-grow: 1;
 }
 
 .logo-part {
@@ -120,7 +120,7 @@ section {
     z-index: 1;
 }
 
-#about {  
+#about {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -131,34 +131,34 @@ section {
     width: 100%;
     height: 100%;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: -1;
 }
 
 .bg-text {
-    padding-left: 80px ;
+    padding-left: 80px;
     font-size: 150px;
     font-weight: 700;
     opacity: 0.2;
 }
 
 .about-title {
-    color:white;
+    color: white;
     font-size: 50px;
 }
 
 .about-content {
     width: 100%;
-    height: 100%;  
+    height: 100%;
     display: flex;
 
 }
 
 .about-content-left {
     display: flex;
-    flex-direction: column;  
-    justify-content:space-between;  
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
 }
 
@@ -178,25 +178,25 @@ section {
 .rect1 {
     width: 217px;
     height: 222px;
-    background-color:#547bc7 ;
+    background-color: #547bc7;
     align-self: flex-end;
 }
 
 .rect2 {
     width: 174px;
     height: 166px;
-    background-color:#3993ba ;
+    background-color: #3993ba;
 }
 
 .rect3 {
     width: 269px;
     height: 174px;
-    background-color:#e36fc3 ;
-    align-self:flex-start;
+    background-color: #e36fc3;
+    align-self: flex-start;
 }
 
 .about-text {
-    color:white;
+    color: white;
     font-size: 30px;
 }
 
@@ -207,7 +207,7 @@ section {
 }
 
 .advantages-bg {
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -222,7 +222,7 @@ section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-content:space-between;
+    align-content: space-between;
 }
 
 .advantages-title {
@@ -240,6 +240,57 @@ section {
     flex-grow: 1;
 }
 
+#photography {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.photo-left {
+    flex-grow: 1;
+    background-image: url(img/pictures/4th-section-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-basis: 500px;
+}
+
+.photo-right {
+    position: relative;
+    overflow: hidden;
+    flex-grow: 2;
+    flex-basis: 500px;
+}
+
+.photo-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #23536d;
+    z-index: -1;
+}
+
+.photo-title {
+    font-size: 50px;
+    text-align: right;
+    color: white;
+}
+
+.photo-text {
+    font-size: 30px;
+    text-align: right;
+    color: white;
+}
+
+.bg-img {
+    background-image: url(img/pictures/4th-section-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 30%;
+    background-size: cover;
+}
 
 @keyframes shake {
     0% {
