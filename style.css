@@ -159,7 +159,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
 }
 
 .about-content-right {
@@ -291,6 +290,69 @@ section {
     height: 30%;
     background-size: cover;
 }
+
+@media(max-width:1300px) {
+    .header-title {
+        font-size: 130px;
+    }
+
+    .bg-text {
+        font-size: 70px;
+    }
+
+    #header {
+        flex-direction: column;
+    }
+
+    .header-left,
+    .header-right {
+        width: 100%;
+    }
+
+    nav {
+        width: 100%;
+        height: 90px;
+        flex-direction: row;
+    }
+
+    section {
+        padding-left: 0px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .about-content-right {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .advantages-content {
+        flex-direction: column;
+    }
+
+    .advantages-title,
+    .advantages-text,
+    .advantages-img {
+        width: 100%; 
+    }
+
+    .advantages-img {
+        flex-grow: 0;
+    }
+
+    #photography {
+        flex-direction: column;
+    }
+
+    .bg-img {
+        height: 50%;
+    }
+
+}
+
 
 @keyframes shake {
     0% {
