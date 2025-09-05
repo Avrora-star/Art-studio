@@ -136,6 +136,32 @@
             <img src="img/pictures/gallery7.png" class="gallery-item item7" alt="image">
         </div>
     </section>
+
+    <section id="contact">
+        <div class="left-side"></div>
+        <div class="mid-side">
+            <h2 class="contact-title">Связаться с нами</h2>
+            <form action="#" class="contact-form">
+                <label for="name" class="form-label">Имя</label>
+                <input placeholder="Иван Иванов" type="text" name="name" id="name" class="text-input">
+
+                <label for="email" class="form-label">Почта</label>
+                <input type="email" class="text-input" placeholder="example@mail.ru" name="email">
+
+                <label for="isCompany" class="form-label">Вид юр. лица</label>
+                <select name="isCompany" id="isCompany" class="select-input">
+                    <option value="yes">Да, мы компания</option>
+                    <option value="no">Нет, я физ лицо</option>
+                </select>
+
+                <label for="agreement" class="form-label">Согласие на обработку данных</label>
+                <input type="checkbox" class="check-box" name="agreement" id="agreement">
+                <button class="btn">Отправить форму</button>
+
+            </form>
+        </div>
+        <div class="right-side"></div>
+    </section>
 </body>
 
 </html>
